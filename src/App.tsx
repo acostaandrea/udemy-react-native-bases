@@ -1,12 +1,15 @@
 import './App.css'
-import { BasicTypes } from './typescript/BasicTypes'
+import { Counter } from './components/Counter'
+// import { BasicTypes } from './typescript/BasicTypes'
 
 function App() {  
 
   return (
     <>
-      <h1>React + TS</h1>
-      <BasicTypes />
+    <div className='flex flex-col justify-center items-center h-svh'>
+      <h1 className='text-4xl mb-5'>React + TS</h1>
+      <Counter />
+    </div>
     </>
   )
 }
