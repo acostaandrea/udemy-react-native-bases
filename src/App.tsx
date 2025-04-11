@@ -1,8 +1,9 @@
 import "./App.css";
+import { FormsPage } from "./components/FormsPage";
 // import { Counter } from "./components/Counter";
 // import { BasicTypes } from './typescript/BasicTypes'
-import { LoginPage } from "./components/LoginPage";
-import { UsersPage } from "./components/UsersPage";
+// import { LoginPage } from "./components/LoginPage";
+// import { UsersPage } from "./components/UsersPage";
 import { AuthProvider } from "./context/AuthContext";
 
 function App() {
@@ -12,8 +13,9 @@ function App() {
         <div className="flex flex-col justify-center items-center h-svh">
           <h1 className="text-4xl mb-5">React + TS</h1>
           {/* <Counter /> */}
-        <LoginPage />
-        <UsersPage />
+        {/* <LoginPage /> */}
+        {/* <UsersPage /> */}
+        <FormsPage />
         </div>
       </AuthProvider>
     </>
