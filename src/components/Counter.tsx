@@ -1,11 +1,8 @@
-import { useState } from "react";
+import { useCounter } from "../hooks/useCounter";
 
 export const Counter = () => {
-  const [count, setCount] = useState(10);
-  const increaseBy = (value:number) =>{
-    setCount(Math.max(count+ value, 0));
-    // setCount((current) => current + value); 
-  }
+  const {count, increaseBy}= useCounter();
+ 
   return (
     <>
       <h3 className="text-2xl mb-2">
